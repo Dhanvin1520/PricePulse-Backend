@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify
 from .database import init_db, add_price, get_prices, add_alert, check_alerts
-from scraper import scrape_amazon
+from .scraper import scrape_amazon
 from .scheduler import start_scheduler
 # Removed unused import
 import os
