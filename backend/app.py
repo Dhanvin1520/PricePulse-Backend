@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify
-from backend.scraper import scrape_amazon
-from backend.database import init_db, add_price, get_prices, add_alert, check_alerts
-from backend.scheduler import start_scheduler
+from .database import init_db, add_price, get_prices, add_alert, check_alerts
+from .scraper import scrape_amazon
+from .scheduler import start_scheduler
 # Removed unused import
 import os
 from dotenv import load_dotenv
